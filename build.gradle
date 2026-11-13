@@ -506,9 +506,6 @@ dependencies {
 
     compileOnlyApi 'org.jetbrains:annotations:24.1.0'
     annotationProcessor 'org.jetbrains:annotations:24.1.0'
-    patchedMinecraft('net.minecraft:launchwrapper:1.17.2') {
-        transitive = false
-    }
 
     if (includeCommonDevEnvMods.toBoolean()) {
         implementation 'mezz.jei:jei_1.12.2:4.16.1.302'
