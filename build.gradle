@@ -14,7 +14,7 @@ import org.gradle.api.tasks.testing.logging.TestExceptionFormat
 import org.gradle.api.tasks.testing.logging.TestLogEvent
 import org.gradle.internal.logging.text.StyledTextOutputFactory
 import org.jetbrains.gradle.ext.Gradle
-
+import com.diffplug.blowdryer.Blowdryer
 import static org.gradle.internal.logging.text.StyledTextOutput.Style
 
 plugins {
@@ -186,7 +186,7 @@ pluginManager.withPlugin('org.jetbrains.kotlin.jvm') {
 
 // Spotless
 //noinspection GroovyAssignabilityCheck
-project.extensions.add(com.diffplug.blowdryer.Blowdryer, 'Blowdryer', com.diffplug.blowdryer.Blowdryer) // make Blowdryer available in plugin application
+project.extensions.add(Blowdryer, 'Blowdryer', Blowdryer) // make Blowdryer available in plugin application
 if (enableSpotless.toBoolean()) {
     apply plugin: 'com.diffplug.spotless'
 
