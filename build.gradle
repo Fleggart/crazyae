@@ -186,7 +186,7 @@ pluginManager.withPlugin('org.jetbrains.kotlin.jvm') {
 
 // Spotless
 //noinspection GroovyAssignabilityCheck
-project.extensions.add(Blowdryer, 'Blowdryer', Blowdryer) // make Blowdryer available in plugin application
+
 if (enableSpotless.toBoolean()) {
     apply plugin: 'com.diffplug.spotless'
 
@@ -206,14 +206,7 @@ if (enableSpotless.toBoolean()) {
         java {
             target 'src/main/java/**/*.java', 'src/test/java/**/*.java' // exclude api as they are not our files
 
-            def orderFile = project.file('spotless.importorder')
-            if (!orderFile.exists()) {
-                orderFile = Blowdryer.file('spotless.importorder')
-            }
-            def formatFile = project.file('spotless.eclipseformat.xml')
-            if (!formatFile.exists()) {
-                formatFile = Blowdryer.file('spotless.eclipseformat.xml')
-            }
+            
 
             toggleOffOn()
             importOrderFile(orderFile)
