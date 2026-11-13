@@ -45,36 +45,6 @@ public final class CrazyAEConfig extends Configuration {
     public static int cellFluidTypesAmt = 15;
 
 
-    //SolarPanels
-    @Config.RangeDouble(min = 0.0D)
-    public static double basicSolarPanelGenPerTick = 128;
-    @Config.RangeDouble(min = 0.0D)
-    public static double basicSolarPanelGenPerTickNight = 64;
-    @Config.RangeDouble(min = 0.0D)
-    public static double basicSolarPanelCapacity = 100000;
-
-    @Config.RangeDouble(min = 0.0D)
-    public static double improvedSolarPanelGenPerTick = 512;
-    @Config.RangeDouble(min = 0.0D)
-    public static double improvedSolarPanelGenPerTickNight = 256;
-    @Config.RangeDouble(min = 0.0D)
-    public static double improvedSolarPanelCapacity = 400000;
-
-    @Config.RangeDouble(min = 0.0D)
-    public static double advancedSolarPanelGenPerTick = 6144;
-    @Config.RangeDouble(min = 0.0D)
-    public static double advancedSolarPanelGenPerTickNight = 3072;
-    @Config.RangeDouble(min = 0.0D)
-    public static double advancedSolarPanelCapacity = 16000000;
-
-    @Config.RangeDouble(min = 0.0D)
-    public static double perfectSolarPanelGenPerTick = 32768;
-    @Config.RangeDouble(min = 0.0D)
-    public static double perfectSolarPanelGenPerTickNight = 16384;
-    @Config.RangeDouble(min = 0.0D)
-    public static double perfectSolarPanelCapacity = 64000000;
-
-
     @Config.RangeInt(min = 1)
     public static int improvedMolecularAssemblerMaxQueueSize = 160;
 
