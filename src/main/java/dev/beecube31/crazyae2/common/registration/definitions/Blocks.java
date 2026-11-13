@@ -19,10 +19,7 @@ import dev.beecube31.crazyae2.common.blocks.energycells.BlockQuantumEnergyCell;
 import dev.beecube31.crazyae2.common.blocks.materials.BlockFluxilized;
 import dev.beecube31.crazyae2.common.blocks.misc.BlockImprovedCondenser;
 import dev.beecube31.crazyae2.common.blocks.networking.*;
-import dev.beecube31.crazyae2.common.blocks.solars.BlockPanelAdvanced;
-import dev.beecube31.crazyae2.common.blocks.solars.BlockPanelBasic;
-import dev.beecube31.crazyae2.common.blocks.solars.BlockPanelImproved;
-import dev.beecube31.crazyae2.common.blocks.solars.BlockPanelPerfect;
+
 import dev.beecube31.crazyae2.common.blocks.storage.BlockDriveImproved;
 import dev.beecube31.crazyae2.common.blocks.trashcans.BlockTrashcanEnergy;
 import dev.beecube31.crazyae2.common.blocks.trashcans.BlockTrashcanFluid;
@@ -45,10 +42,7 @@ import dev.beecube31.crazyae2.common.tile.energycells.TileQuantumEnergyCell;
 
 import dev.beecube31.crazyae2.common.tile.misc.TileImprovedCondenser;
 import dev.beecube31.crazyae2.common.tile.networking.*;
-import dev.beecube31.crazyae2.common.tile.solars.TileEnergyPanelAdvanced;
-import dev.beecube31.crazyae2.common.tile.solars.TileEnergyPanelBasic;
-import dev.beecube31.crazyae2.common.tile.solars.TileEnergyPanelImproved;
-import dev.beecube31.crazyae2.common.tile.solars.TileEnergyPanelPerfect;
+
 import dev.beecube31.crazyae2.common.tile.storage.TileImprovedDrive;
 import dev.beecube31.crazyae2.common.tile.trashcans.TileTrashcanEnergy;
 import dev.beecube31.crazyae2.common.tile.trashcans.TileTrashcanFluids;
