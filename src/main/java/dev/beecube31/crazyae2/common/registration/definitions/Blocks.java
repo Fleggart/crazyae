@@ -369,29 +369,6 @@ public class Blocks {
 				.tileEntity(new TileEntityDefinition(TileBigCrystalCharger.class))
 				.build();
 
-
-		this.energyPanelBasic = registry.block("basic_solar_panel", BlockPanelBasic::new)
-				.features(Features.SOLAR_PANELS)
-				.tileEntity(new TileEntityDefinition(TileEnergyPanelBasic.class))
-				.build();
-		this.energyPanelImproved = registry.block("improved_solar_panel", BlockPanelImproved::new)
-				.features(Features.SOLAR_PANELS)
-				.tileEntity(new TileEntityDefinition(TileEnergyPanelImproved.class))
-				.build();
-		this.energyPanelAdvanced = registry.block("advanced_solar_panel", BlockPanelAdvanced::new)
-				.features(Features.SOLAR_PANELS)
-				.tileEntity(new TileEntityDefinition(TileEnergyPanelAdvanced.class))
-				.build();
-		this.energyPanelPerfect = registry.block("perfect_solar_panel", BlockPanelPerfect::new)
-				.features(Features.SOLAR_PANELS)
-				.tileEntity(new TileEntityDefinition(TileEnergyPanelPerfect.class))
-				.build();
-
-//		this.perfectInscriber = registry.block("perfect_inscriber", BlockPerfectInscriber::new)
-//				.features(Features.PERFECT_INSCRIBER)
-//				.tileEntity(new TileEntityDefinition(TilePerfectInscriber.class))
-//				.build();
-
 		this.patternsInterface = registry.block("patterns_interface", BlockInterfacePatterns::new)
 				.features(Features.PATTERNS_INTERFACE)
 				.tileEntity(new TileEntityDefinition(TilePatternsInterface.class))
