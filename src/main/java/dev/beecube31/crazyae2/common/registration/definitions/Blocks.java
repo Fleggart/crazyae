@@ -94,9 +94,7 @@ public class Blocks {
 	private final ITileDefinition bigCrystalCharger;
 	
 
-	private final ITileDefinition energyPanelBasic;
-	private final ITileDefinition energyPanelImproved;
-	private final ITileDefinition energyPanelAdvanced;
+	
 
 	//private final ITileDefinition perfectInscriber;
 
@@ -655,17 +653,10 @@ public class Blocks {
 		return this.bigCrystalCharger;
 	}
 
-	public ITileDefinition energyPanelBasic() {
-		return this.energyPanelBasic;
-	}
+	
 
-	public ITileDefinition energyPanelImproved() {
-		return this.energyPanelImproved;
-	}
 
-	public ITileDefinition energyPanelAdvanced() {
-		return this.energyPanelAdvanced;
-	}
+	
 
 	public ITileDefinition improvedCondenser() {
 		return this.improvedCondenser;
