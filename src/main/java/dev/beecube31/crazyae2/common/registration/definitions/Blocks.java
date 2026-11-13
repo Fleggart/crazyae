@@ -24,7 +24,7 @@ import dev.beecube31.crazyae2.common.blocks.storage.BlockDriveImproved;
 import dev.beecube31.crazyae2.common.blocks.trashcans.BlockTrashcanEnergy;
 import dev.beecube31.crazyae2.common.blocks.trashcans.BlockTrashcanFluid;
 import dev.beecube31.crazyae2.common.blocks.trashcans.BlockTrashcanItem;
-import dev.beecube31.crazyae2.common.blocks.trashcans.BlockTrashcanMana;
+
 import dev.beecube31.crazyae2.common.features.Features;
 import dev.beecube31.crazyae2.common.features.subfeatures.DenseCellFeatures;
 import dev.beecube31.crazyae2.common.features.subfeatures.MegaDenseCellFeatures;
@@ -47,7 +47,7 @@ import dev.beecube31.crazyae2.common.tile.storage.TileImprovedDrive;
 import dev.beecube31.crazyae2.common.tile.trashcans.TileTrashcanEnergy;
 import dev.beecube31.crazyae2.common.tile.trashcans.TileTrashcanFluids;
 import dev.beecube31.crazyae2.common.tile.trashcans.TileTrashcanItems;
-import dev.beecube31.crazyae2.common.tile.trashcans.TileTrashcanMana;
+
 import net.minecraft.util.ResourceLocation;
 
 @SuppressWarnings("unused")
@@ -118,7 +118,7 @@ public class Blocks {
 
 	private final ITileDefinition trashcanItem;
 	private final ITileDefinition trashcanFluid;
-	private final ITileDefinition trashcanMana;
+
 	private final ITileDefinition trashcanEnergy;
 	//private final ITileDefinition trashcanExp;
 
@@ -446,12 +446,6 @@ public class Blocks {
 				.tileEntity(new TileEntityDefinition(TileTrashcanEnergy.class))
 				.build();
 
-		this.trashcanMana = registry.block("trashcan_mana", BlockTrashcanMana::new)
-				.ifModPresent("botania")
-				.features(Features.TRASH_CANS)
-				.tileEntity(new TileEntityDefinition(TileTrashcanMana.class))
-				.build();
-
 //		this.trashcanExp = registry.block("trashcan_exp", BlockTrashcanExp::new)
 //				.features(Features.TRASH_CANS)
 //				.tileEntity(new TileEntityDefinition(TileTrashcanItems.class))
@@ -506,10 +500,6 @@ public class Blocks {
 
 	public ITileDefinition trashcanFluid() {
 		return this.trashcanFluid;
-	}
-
-	public ITileDefinition trashcanMana() {
-		return this.trashcanMana;
 	}
 
 	public ITileDefinition trashcanEnergy() {
