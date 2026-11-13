@@ -446,12 +446,6 @@ public class Blocks {
 				.tileEntity(new TileEntityDefinition(TileTrashcanEnergy.class))
 				.build();
 
-//		this.trashcanExp = registry.block("trashcan_exp", BlockTrashcanExp::new)
-//				.features(Features.TRASH_CANS)
-//				.tileEntity(new TileEntityDefinition(TileTrashcanItems.class))
-//				.build();
-
-
 		this.improvedCondenser = registry.block("improved_condenser", BlockImprovedCondenser::new)
 				.features(Features.STUB)
 				.tileEntity(new TileEntityDefinition(TileImprovedCondenser.class))
@@ -506,9 +500,7 @@ public class Blocks {
 		return this.trashcanEnergy;
 	}
 
-//	public ITileDefinition trashcanExp() {
-//		return this.trashcanExp;
-//	}
+
 
 
 	public ITileDefinition mechanicalPetal() {
