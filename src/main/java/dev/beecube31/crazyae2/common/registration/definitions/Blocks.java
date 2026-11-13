@@ -92,7 +92,7 @@ public class Blocks {
 	
 	private final ITileDefinition craftingUnitsCombiner;
 	private final ITileDefinition bigCrystalCharger;
-	private final ITileDefinition energyPanelPerfect;
+	
 
 	private final ITileDefinition energyPanelBasic;
 	private final ITileDefinition energyPanelImproved;
@@ -650,15 +650,9 @@ public class Blocks {
 //	//public ITileDefinition perfectInscriber() {
 //		return this.perfectInscriber;
 //	}
-
 	
-
 	public ITileDefinition bigCrystalCharger() {
 		return this.bigCrystalCharger;
-	}
-
-	public ITileDefinition energyPanelPerfect() {
-		return this.energyPanelPerfect;
 	}
 
 	public ITileDefinition energyPanelBasic() {
