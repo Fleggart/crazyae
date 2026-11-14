@@ -327,8 +327,6 @@ public class GuiCrazyAEUpgradeable extends CrazyAEBaseGui implements IJEIGhostIn
                 : this.bc instanceof TileQuantumInterface ? CrazyAEGuiText.QUANTUM_INTERFACE
                 : this.bc instanceof PartManaImportBus ? CrazyAEGuiText.MANA_IMPORT_BUS
                 : this.bc instanceof PartManaExportBus ? CrazyAEGuiText.MANA_EXPORT_BUS
-                : this.bc instanceof PartEnergyImportBus ? CrazyAEGuiText.ENERGY_IMPORT_BUS
-                : this.bc instanceof PartEnergyExportBus ? CrazyAEGuiText.ENERGY_EXPORT_BUS
                 : CrazyAEGuiText.NOT_DEFINED;
     }
 
