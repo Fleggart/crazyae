@@ -21,7 +21,7 @@ import dev.beecube31.crazyae2.common.blocks.misc.BlockImprovedCondenser;
 import dev.beecube31.crazyae2.common.blocks.networking.*;
 
 import dev.beecube31.crazyae2.common.blocks.storage.BlockDriveImproved;
-import dev.beecube31.crazyae2.common.blocks.trashcans.BlockTrashcanEnergy;
+
 import dev.beecube31.crazyae2.common.blocks.trashcans.BlockTrashcanFluid;
 import dev.beecube31.crazyae2.common.blocks.trashcans.BlockTrashcanItem;
 
@@ -44,7 +44,6 @@ import dev.beecube31.crazyae2.common.tile.misc.TileImprovedCondenser;
 import dev.beecube31.crazyae2.common.tile.networking.*;
 
 import dev.beecube31.crazyae2.common.tile.storage.TileImprovedDrive;
-import dev.beecube31.crazyae2.common.tile.trashcans.TileTrashcanEnergy;
 import dev.beecube31.crazyae2.common.tile.trashcans.TileTrashcanFluids;
 import dev.beecube31.crazyae2.common.tile.trashcans.TileTrashcanItems;
 
@@ -119,7 +118,7 @@ public class Blocks {
 	private final ITileDefinition trashcanItem;
 	private final ITileDefinition trashcanFluid;
 
-	private final ITileDefinition trashcanEnergy;
+	
 	//private final ITileDefinition trashcanExp;
 
 	public Blocks(Registry registry) {
@@ -439,11 +438,6 @@ public class Blocks {
 		this.trashcanFluid = registry.block("trashcan_fluid", BlockTrashcanFluid::new)
 				.features(Features.TRASH_CANS)
 				.tileEntity(new TileEntityDefinition(TileTrashcanFluids.class))
-				.build();
-
-		this.trashcanEnergy = registry.block("trashcan_energy", BlockTrashcanEnergy::new)
-				.features(Features.TRASH_CANS)
-				.tileEntity(new TileEntityDefinition(TileTrashcanEnergy.class))
 				.build();
 
 		this.improvedCondenser = registry.block("improved_condenser", BlockImprovedCondenser::new)

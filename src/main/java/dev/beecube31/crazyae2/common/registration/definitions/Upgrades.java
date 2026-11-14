@@ -65,7 +65,7 @@ public class Upgrades implements DamagedDefinitions<DamagedItemDefinition, Upgra
 				UpgradeType.STACKS.registerItem(CrazyAE.definitions().parts().energyExportBus(), new FeatureSet().add("stacks:4").add(CrazyAETooltip.MORE_ITEMS_PER_TICK.getUnlocalized()).add("32;2048;32768;524288;33554432"));
 
 				UpgradeType.STACKS.registerItem(CrazyAE.definitions().blocks().trashcanItem(), new FeatureSet().add("stacks:4").add(CrazyAETooltip.MORE_ITEMS_PER_TICK.getUnlocalized()).add("32;2048;16384;65536;262144"));
-				UpgradeType.STACKS.registerItem(CrazyAE.definitions().blocks().trashcanEnergy(), new FeatureSet().add("stacks:4").add(CrazyAETooltip.MORE_ITEMS_PER_TICK.getUnlocalized()).add("32;2048;16384;65536;262144"));
+				
 				UpgradeType.STACKS.registerItem(CrazyAE.definitions().blocks().trashcanFluid(), new FeatureSet().add("stacks:4").add(CrazyAETooltip.MORE_ITEMS_PER_TICK.getUnlocalized()).add("32;2048;16384;65536;262144"));
 				
 
