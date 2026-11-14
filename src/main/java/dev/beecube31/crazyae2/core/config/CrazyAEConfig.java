@@ -12,22 +12,6 @@ import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 @Mod.EventBusSubscriber(modid = Tags.MODID)
 @Config(modid = Tags.MODID, name = "crazyae")
 public final class CrazyAEConfig extends Configuration {
-    @Config.Comment("Capacity of the Improved Energy Cell.")
-    @Config.Name("impEnergyCellCap")
-    @Config.RangeDouble(min = 0)
-    public static double impEnergyCellCap = 262144 * 64;
-    @Config.Comment("Capacity of the Advanced Energy Cell.")
-    @Config.Name("advEnergyCellCap")
-    @Config.RangeDouble(min = 0)
-    public static double advEnergyCellCap = 262144 * 440;
-    @Config.Comment("Capacity of the Perfect Energy Cell.")
-    @Config.Name("perEnergyCellCap")
-    @Config.RangeDouble(min = 0)
-    public static double perEnergyCellCap = 262144 * 3072;
-    @Config.Comment("Capacity of the Quantum Energy Cell.")
-    @Config.Name("quantumEnergyCellCap")
-    @Config.RangeDouble(min = 0)
-    public static double quantumEnergyCellCap = 262144D * 65536D;
 
     @Config.Comment("Quantum Channels Multiplier will give extra channels by this value. (For small cables this value will be divided by 4)")
     @Config.Name("QCMBoostAmt")
