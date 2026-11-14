@@ -40,7 +40,7 @@ public enum Features implements IFeature {
 	PERFECT_INTERFACE(
 			new FeatureSet().add("mixin:perfect.interface")
 	),
-	ENERGY_BUSES,
+	
 
 	FAST_AUTOCRAFTING_SYSTEM(
 			new FeatureSet().add("mixin:qcpu")
