@@ -118,7 +118,7 @@ public class Blocks {
 	
 
 	
-	//private final ITileDefinition trashcanExp;
+	
 
 	public Blocks(Registry registry) {
 		this.craftingStorage256k = registry.block("crafting_storage_256k", () -> new BlockDenseCraftingUnit(BlockDenseCraftingUnit.DenseCraftingUnitType.STORAGE_256K))
