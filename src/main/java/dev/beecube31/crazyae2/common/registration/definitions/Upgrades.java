@@ -63,8 +63,6 @@ public class Upgrades implements DamagedDefinitions<DamagedItemDefinition, Upgra
 
 				UpgradeType.STACKS.registerItem(CrazyAE.definitions().parts().energyImportBus(), new FeatureSet().add("stacks:4").add(CrazyAETooltip.MORE_ITEMS_PER_TICK.getUnlocalized()).add("32;2048;32768;524288;33554432"));
 				UpgradeType.STACKS.registerItem(CrazyAE.definitions().parts().energyExportBus(), new FeatureSet().add("stacks:4").add(CrazyAETooltip.MORE_ITEMS_PER_TICK.getUnlocalized()).add("32;2048;32768;524288;33554432"));
-
-				UpgradeType.STACKS.registerItem(CrazyAE.definitions().blocks().trashcanItem(), new FeatureSet().add("stacks:4").add(CrazyAETooltip.MORE_ITEMS_PER_TICK.getUnlocalized()).add("32;2048;16384;65536;262144"));
 				
 				
 				
@@ -131,8 +129,6 @@ public class Upgrades implements DamagedDefinitions<DamagedItemDefinition, Upgra
 
 			appeng.api.config.Upgrades.FUZZY.registerItem(CrazyAE.definitions().parts().improvedExportBus(), 1);
 			appeng.api.config.Upgrades.FUZZY.registerItem(CrazyAE.definitions().parts().improvedImportBus(), 1);
-
-			appeng.api.config.Upgrades.FUZZY.registerItem(CrazyAE.definitions().blocks().trashcanItem(), 1);
 		});
 	}
 
