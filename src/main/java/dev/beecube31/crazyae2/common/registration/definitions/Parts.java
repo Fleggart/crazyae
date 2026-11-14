@@ -45,8 +45,7 @@ public class Parts implements Definitions<CrazyAEDamagedItemDefinition> {
 	private final CrazyAEDamagedItemDefinition manaImportBus;
 	private final CrazyAEDamagedItemDefinition manaExportBus;
 
-	private final CrazyAEDamagedItemDefinition energyImportBus;
-	private final CrazyAEDamagedItemDefinition energyExportBus;
+	
 
 	private final CrazyAEDamagedItemDefinition manaTerm;
 
@@ -87,8 +86,7 @@ public class Parts implements Definitions<CrazyAEDamagedItemDefinition> {
 		this.partPatternsInterface = this.createPart(this.itemPart, PartType.PART_PATTERNS_IFACE);
 		this.partPerfectInterface = this.createPart(this.itemPart, PartType.PART_PERFECT_IFACE);
 
-		this.energyImportBus = this.createPart(this.itemPart, PartType.ENERGY_IMPORT_BUS);
-		this.energyExportBus = this.createPart(this.itemPart, PartType.ENERGY_EXPORT_BUS);
+	
 	}
 
 	public CrazyAEDamagedItemDefinition improvedImportBus() {
@@ -115,13 +113,9 @@ public class Parts implements Definitions<CrazyAEDamagedItemDefinition> {
 		return this.manaExportBus;
 	}
 
-	public CrazyAEDamagedItemDefinition energyExportBus() {
-		return this.energyExportBus;
-	}
 
-	public CrazyAEDamagedItemDefinition energyImportBus() {
-		return this.energyImportBus;
-	}
+
+	
 
 	public CrazyAEDamagedItemDefinition manaTerminal() {
 		return this.manaTerm;
@@ -170,9 +164,6 @@ public class Parts implements Definitions<CrazyAEDamagedItemDefinition> {
 		MANA_EXPORT_BUS("mana_export_bus", PartManaExportBus.class, Features.MANA_BUSES),
 
 		MANA_TERM("mana_terminal", PartManaTerminal.class, Features.MANA_TERM),
-
-		ENERGY_IMPORT_BUS("energy_import_bus", PartEnergyImportBus.class, Features.ENERGY_BUSES),
-		ENERGY_EXPORT_BUS("energy_export_bus", PartEnergyExportBus.class, Features.ENERGY_BUSES),
 		ENERGY_TERM("energy_terminal", PartEnergyTerminal.class, Features.ENERGY_TERM),
 
 		PART_PERFECT_IFACE("part_perfect_iface", PartPerfectInterface.class, Features.PERFECT_INTERFACE),
