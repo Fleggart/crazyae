@@ -44,9 +44,9 @@ public enum CrazyAEGuiText {
     ENERGY_EXTRACTOR,
     ENERGY_IMPORT_BUS,
 
-    ENERGY_SETTINGS_PAGE,
+    
 
-    ENERGY_TERMINAL,
+    
 
     ENERGY_USED,
     EU_ENERGY,
@@ -103,7 +103,7 @@ public enum CrazyAEGuiText {
     OPEN_CRAFTING_BLOCK_LIST,
 
 
-    OPEN_ENERGY_SETTINGS_PAGE,
+  
     OPEN_PATTERN_STORAGE,
     PAGE,
     PASTE_FROM_CLIPBOARD,
