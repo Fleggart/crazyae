@@ -131,7 +131,6 @@ public enum CrazyAEGuiText {
 
     SELECT_ALL,
     SE_ENERGY,
-    TRASHCAN,
     UPDATE_FOUND,
     USED,
 
