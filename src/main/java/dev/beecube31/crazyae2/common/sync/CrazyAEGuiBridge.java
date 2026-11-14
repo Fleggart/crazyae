@@ -34,7 +34,7 @@ import dev.beecube31.crazyae2.common.tile.networking.TileCraftingUnitsCombiner;
 import dev.beecube31.crazyae2.common.tile.networking.TileImprovedIOPort;
 import dev.beecube31.crazyae2.common.tile.storage.TileImprovedDrive;
 
-import dev.beecube31.crazyae2.common.tile.trashcans.TileTrashcanFluids;
+
 import dev.beecube31.crazyae2.common.tile.trashcans.TileTrashcanItems;
 
 import net.minecraft.entity.player.EntityPlayer;
@@ -86,7 +86,7 @@ public enum CrazyAEGuiBridge {
 	GUI_BREWERY_MECHANICAL(TileMechanicalBrewery.class, ContainerBreweryMechanical.class, GuiHostType.WORLD, SecurityPermissions.BUILD),
 
 	GUI_TRASHCAN_ITEMS(TileTrashcanItems.class, ContainerTrashcan.class, GuiHostType.WORLD, SecurityPermissions.BUILD),
-	GUI_TRASHCAN_FLUID(TileTrashcanFluids.class, ContainerTrashcanFluid.class, GuiHostType.WORLD, SecurityPermissions.BUILD),
+	
 	
 	
 	GUI_TRASHCAN_EXP(TileTrashcanItems.class, ContainerTrashcan.class, GuiHostType.WORLD, SecurityPermissions.BUILD),
