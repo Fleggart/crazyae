@@ -61,8 +61,8 @@ public class Upgrades implements DamagedDefinitions<DamagedItemDefinition, Upgra
 				UpgradeType.STACKS.registerItem(CrazyAE.definitions().parts().manaImportBus(), new FeatureSet().add("stacks:4").add(CrazyAETooltip.MORE_ITEMS_PER_TICK.getUnlocalized()).add("256;16384;131328;524544;2097408"));
 				UpgradeType.STACKS.registerItem(CrazyAE.definitions().parts().manaExportBus(), new FeatureSet().add("stacks:4").add(CrazyAETooltip.MORE_ITEMS_PER_TICK.getUnlocalized()).add("256;16384;131328;524544;2097408"));
 
-				UpgradeType.STACKS.registerItem(CrazyAE.definitions().parts().energyImportBus(), new FeatureSet().add("stacks:4").add(CrazyAETooltip.MORE_ITEMS_PER_TICK.getUnlocalized()).add("32;2048;32768;524288;33554432"));
-				UpgradeType.STACKS.registerItem(CrazyAE.definitions().parts().energyExportBus(), new FeatureSet().add("stacks:4").add(CrazyAETooltip.MORE_ITEMS_PER_TICK.getUnlocalized()).add("32;2048;32768;524288;33554432"));
+				
+				
 				
 				
 				
@@ -119,8 +119,8 @@ public class Upgrades implements DamagedDefinitions<DamagedItemDefinition, Upgra
 			appeng.api.config.Upgrades.REDSTONE.registerItem(CrazyAE.definitions().parts().improvedImportFluidBus(), 1);
 			appeng.api.config.Upgrades.REDSTONE.registerItem(CrazyAE.definitions().parts().manaImportBus(), 1);
 			appeng.api.config.Upgrades.REDSTONE.registerItem(CrazyAE.definitions().parts().manaExportBus(), 1);
-			appeng.api.config.Upgrades.REDSTONE.registerItem(CrazyAE.definitions().parts().energyImportBus(), 1);
-			appeng.api.config.Upgrades.REDSTONE.registerItem(CrazyAE.definitions().parts().energyExportBus(), 1);
+			
+			
 
 			appeng.api.config.Upgrades.CAPACITY.registerItem(CrazyAE.definitions().parts().improvedExportBus(), 2);
 			appeng.api.config.Upgrades.CAPACITY.registerItem(CrazyAE.definitions().parts().improvedImportBus(), 2);
