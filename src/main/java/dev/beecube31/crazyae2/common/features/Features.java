@@ -25,7 +25,7 @@ public enum Features implements IFeature {
 
 	PARTS(),
 
-	ENERGY_TERM(),
+	
 
 	PORTABLE_DENSE_CELLS,
 	IMPROVED_DRIVE,
