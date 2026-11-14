@@ -34,9 +34,6 @@ import dev.beecube31.crazyae2.common.tile.networking.TileCraftingUnitsCombiner;
 import dev.beecube31.crazyae2.common.tile.networking.TileImprovedIOPort;
 import dev.beecube31.crazyae2.common.tile.storage.TileImprovedDrive;
 
-
-import dev.beecube31.crazyae2.common.tile.trashcans.TileTrashcanItems;
-
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.InventoryPlayer;
 import net.minecraft.item.ItemStack;
@@ -84,12 +81,6 @@ public enum CrazyAEGuiBridge {
 	GUI_RUNEALTAR_MECHANICAL(TileMechanicalRunealtar.class, ContainerRunealtarMechanical.class, GuiHostType.WORLD, SecurityPermissions.BUILD),
 	GUI_TERAPLATE_MECHANICAL(TileMechanicalTerraplate.class, ContainerTeraplateMechanical.class, GuiHostType.WORLD, SecurityPermissions.BUILD),
 	GUI_BREWERY_MECHANICAL(TileMechanicalBrewery.class, ContainerBreweryMechanical.class, GuiHostType.WORLD, SecurityPermissions.BUILD),
-
-	GUI_TRASHCAN_ITEMS(TileTrashcanItems.class, ContainerTrashcan.class, GuiHostType.WORLD, SecurityPermissions.BUILD),
-	
-	
-	
-	GUI_TRASHCAN_EXP(TileTrashcanItems.class, ContainerTrashcan.class, GuiHostType.WORLD, SecurityPermissions.BUILD),
 
 
 	GUI_MECHANICAL_DEVICE_PATTERN_INV(TileBotaniaMechanicalMachineBase.class, ContainerBotaniaDevicePatternsInv.class, GuiHostType.WORLD, SecurityPermissions.BUILD),
