@@ -23,7 +23,7 @@ import dev.beecube31.crazyae2.common.blocks.networking.*;
 import dev.beecube31.crazyae2.common.blocks.storage.BlockDriveImproved;
 
 
-import dev.beecube31.crazyae2.common.blocks.trashcans.BlockTrashcanItem;
+
 
 import dev.beecube31.crazyae2.common.features.Features;
 import dev.beecube31.crazyae2.common.features.subfeatures.DenseCellFeatures;
@@ -44,7 +44,7 @@ import dev.beecube31.crazyae2.common.tile.misc.TileImprovedCondenser;
 import dev.beecube31.crazyae2.common.tile.networking.*;
 
 import dev.beecube31.crazyae2.common.tile.storage.TileImprovedDrive;
-import dev.beecube31.crazyae2.common.tile.trashcans.TileTrashcanItems;
+
 
 import net.minecraft.util.ResourceLocation;
 
@@ -114,7 +114,7 @@ public class Blocks {
 	private final ITileDefinition teraplateMechanical;
 	private final ITileDefinition breweryMechanical;
 
-	private final ITileDefinition trashcanItem;
+	
 	
 
 	
@@ -429,11 +429,6 @@ public class Blocks {
 				.tileEntity(new TileEntityDefinition(TileMechanicalBrewery.class))
 				.build();
 
-		this.trashcanItem = registry.block("trashcan_item", BlockTrashcanItem::new)
-				.features(Features.TRASH_CANS)
-				.tileEntity(new TileEntityDefinition(TileTrashcanItems.class))
-				.build();
-
 		this.improvedCondenser = registry.block("improved_condenser", BlockImprovedCondenser::new)
 				.features(Features.STUB)
 				.tileEntity(new TileEntityDefinition(TileImprovedCondenser.class))
@@ -474,10 +469,6 @@ public class Blocks {
 
 	public ITileDefinition mechanicalBrewery() {
 		return this.breweryMechanical;
-	}
-
-	public ITileDefinition trashcanItem() {
-		return this.trashcanItem;
 	}
 
 	public ITileDefinition mechanicalPetal() {
