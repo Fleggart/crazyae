@@ -11,41 +11,22 @@ import dev.beecube31.crazyae2.common.blocks.botania.*;
 import dev.beecube31.crazyae2.common.blocks.crafting.BlockDenseCraftingUnit;
 import dev.beecube31.crazyae2.common.blocks.crafting.BlockImprovedMAC;
 import dev.beecube31.crazyae2.common.blocks.crafting.BlockQuantumCPU;
-import dev.beecube31.crazyae2.common.blocks.energycells.BlockAdvancedEnergyCell;
-import dev.beecube31.crazyae2.common.blocks.energycells.BlockImprovedEnergyCell;
-import dev.beecube31.crazyae2.common.blocks.energycells.BlockPerfectEnergyCell;
-import dev.beecube31.crazyae2.common.blocks.energycells.BlockQuantumEnergyCell;
-
 import dev.beecube31.crazyae2.common.blocks.materials.BlockFluxilized;
 import dev.beecube31.crazyae2.common.blocks.misc.BlockImprovedCondenser;
 import dev.beecube31.crazyae2.common.blocks.networking.*;
-
 import dev.beecube31.crazyae2.common.blocks.storage.BlockDriveImproved;
-
-
-
-
 import dev.beecube31.crazyae2.common.features.Features;
 import dev.beecube31.crazyae2.common.features.subfeatures.DenseCellFeatures;
 import dev.beecube31.crazyae2.common.features.subfeatures.MegaDenseCellFeatures;
-import dev.beecube31.crazyae2.common.items.ItemEnergyCells;
 import dev.beecube31.crazyae2.common.registration.registry.Registry;
 import dev.beecube31.crazyae2.common.registration.registry.rendering.CrazyAEDenseCraftingCubeRendering;
 import dev.beecube31.crazyae2.common.tile.botania.*;
 import dev.beecube31.crazyae2.common.tile.crafting.TileDenseCraftingUnit;
 import dev.beecube31.crazyae2.common.tile.crafting.TileImprovedMAC;
 import dev.beecube31.crazyae2.common.tile.crafting.TileQuantumCPU;
-import dev.beecube31.crazyae2.common.tile.energycells.TileAdvancedEnergyCell;
-import dev.beecube31.crazyae2.common.tile.energycells.TileImprovedEnergyCell;
-import dev.beecube31.crazyae2.common.tile.energycells.TilePerfectEnergyCell;
-import dev.beecube31.crazyae2.common.tile.energycells.TileQuantumEnergyCell;
-
 import dev.beecube31.crazyae2.common.tile.misc.TileImprovedCondenser;
 import dev.beecube31.crazyae2.common.tile.networking.*;
-
 import dev.beecube31.crazyae2.common.tile.storage.TileImprovedDrive;
-
-
 import net.minecraft.util.ResourceLocation;
 
 @SuppressWarnings("unused")
@@ -62,7 +43,6 @@ public class Blocks {
 	private final ITileDefinition craftingStorage32gb;
 	private final ITileDefinition craftingStorage128gb;
 	private final ITileDefinition craftingStorageCreative;
-
 	private final ITileDefinition coprocessor4x;
 	private final ITileDefinition coprocessor16x;
 	private final ITileDefinition coprocessor64x;
@@ -75,37 +55,19 @@ public class Blocks {
 	private final ITileDefinition coprocessor1048576x;
 	private final ITileDefinition coprocessor4194304x;
 	private final ITileDefinition coprocessorCreative;
-
-
-
-	private final ITileDefinition energyCellImproved;
-	private final ITileDefinition energyCellAdvanced;
-	private final ITileDefinition energyCellPerfect;
-	private final ITileDefinition energyCellQuantum;
-
 	private final ITileDefinition fastMAC;
 	private final ITileDefinition quantumCPU;
 	private final ITileDefinition impDrive;
 	private final ITileDefinition iOPortImp;
-	
 	private final ITileDefinition craftingUnitsCombiner;
 	private final ITileDefinition bigCrystalCharger;
-	
-
-	
-
-	//private final ITileDefinition perfectInscriber;
-
 	private final ITileDefinition improvedCondenser;
-
 	private final IBlockDefinition fluixilizedBlock;
-
 	private final ITileDefinition patternsInterface;
 	private final ITileDefinition perfectInterface;
 	private final ITileDefinition quantumInterface;
 	private final ITileDefinition quantumChannelMultiplier;
 	private final ITileDefinition quantumChannelMultiplierCreative;
-
 	private final ITileDefinition elventradeMechanical;
 	private final ITileDefinition manapoolMechanical;
 	private final ITileDefinition petalMechanical;
@@ -113,12 +75,6 @@ public class Blocks {
 	private final ITileDefinition puredaisyMechanical;
 	private final ITileDefinition teraplateMechanical;
 	private final ITileDefinition breweryMechanical;
-
-	
-	
-
-	
-	
 
 	public Blocks(Registry registry) {
 		this.craftingStorage256k = registry.block("crafting_storage_256k", () -> new BlockDenseCraftingUnit(BlockDenseCraftingUnit.DenseCraftingUnitType.STORAGE_256K))
@@ -301,37 +257,6 @@ public class Blocks {
 				.features(Features.CREATIVE_DENSE_CPU_BLOCKS)
 				.build();
 
-
-		this.energyCellImproved = registry.block("improved_energy_cell", BlockImprovedEnergyCell::new)
-				.features(Features.IMPROVED_ENERGY_CELLS)
-				.item(ItemEnergyCells::new)
-				.tileEntity(new TileEntityDefinition(TileImprovedEnergyCell.class))
-				.rendering(new BlockBigEnergyCellRendering(new ResourceLocation(Tags.MODID, "improved_energy_cell")))
-				.build();
-
-		this.energyCellAdvanced = registry.block("advanced_energy_cell", BlockAdvancedEnergyCell::new)
-				.features(Features.IMPROVED_ENERGY_CELLS)
-				.item(ItemEnergyCells::new)
-				.tileEntity(new TileEntityDefinition(TileAdvancedEnergyCell.class))
-				.rendering(new BlockBigEnergyCellRendering(new ResourceLocation(Tags.MODID, "advanced_energy_cell")))
-				.build();
-
-		this.energyCellPerfect = registry.block("perfect_energy_cell", BlockPerfectEnergyCell::new)
-				.features(Features.IMPROVED_ENERGY_CELLS)
-				.item(ItemEnergyCells::new)
-				.tileEntity(new TileEntityDefinition(TilePerfectEnergyCell.class))
-				.rendering(new BlockBigEnergyCellRendering(new ResourceLocation(Tags.MODID, "perfect_energy_cell")))
-				.build();
-
-		this.energyCellQuantum = registry.block("quantum_energy_cell", BlockQuantumEnergyCell::new)
-				.features(Features.IMPROVED_ENERGY_CELLS)
-				.item(ItemEnergyCells::new)
-				.tileEntity(new TileEntityDefinition(TileQuantumEnergyCell.class))
-				.rendering(new BlockBigEnergyCellRendering(new ResourceLocation(Tags.MODID, "quantum_energy_cell")))
-				.build();
-
-
-
 		this.fastMAC = registry.block("improved_molecular_assembler", BlockImprovedMAC::new)
 				.features(Features.IMPROVED_MOLECULAR_ASSEMBLER)
 				.tileEntity(new TileEntityDefinition(TileImprovedMAC.class))
@@ -341,7 +266,6 @@ public class Blocks {
 				.features(Features.FAST_AUTOCRAFTING_SYSTEM)
 				.tileEntity(new TileEntityDefinition(TileQuantumCPU.class))
 				.build();
-
 
 		this.impDrive = registry.block("improved_drive", BlockDriveImproved::new)
 				.features(Features.IMPROVED_DRIVE)
@@ -354,8 +278,6 @@ public class Blocks {
 				.features(Features.IMPROVED_IO_PORT)
 				.tileEntity(new TileEntityDefinition(TileImprovedIOPort.class))
 				.build();
-
-		
 
 		this.craftingUnitsCombiner = registry.block("crafting_units_combiner", BlockCraftingUnitsCombiner::new)
 				.tileEntity(new TileEntityDefinition(TileCraftingUnitsCombiner.class))
@@ -391,7 +313,6 @@ public class Blocks {
 				.tileEntity(new TileEntityDefinition(TileCreativeQuantumChannelsBooster.class))
 				.rendering(new QCMCreativeRendering())
 				.build();
-
 
 		this.elventradeMechanical = registry.block("mechanical_elventrade", BlockMechanicalElventrade::new)
 				.ifModPresent("botania")
@@ -575,38 +496,13 @@ public class Blocks {
 		return this.coprocessorCreative;
 	}
 
-	public ITileDefinition improvedEnergyCell() {
-		return this.energyCellImproved;
-	}
-
-	public ITileDefinition advancedEnergyCell() {
-		return this.energyCellAdvanced;
-	}
-
-	public ITileDefinition perfectEnergyCell() {
-		return this.energyCellPerfect;
-	}
-
-	public ITileDefinition quantumEnergyCell() {
-		return this.energyCellQuantum;
-	}
-
 	public ITileDefinition ioPortImp() {
 		return this.iOPortImp;
 	}
-//
-//	//public ITileDefinition perfectInscriber() {
-//		return this.perfectInscriber;
-//	}
 	
 	public ITileDefinition bigCrystalCharger() {
 		return this.bigCrystalCharger;
 	}
-
-	
-
-
-	
 
 	public ITileDefinition improvedCondenser() {
 		return this.improvedCondenser;
