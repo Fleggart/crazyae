@@ -7,7 +7,6 @@ import appeng.api.implementations.guiobjects.IPortableCell;
 import appeng.api.networking.security.IActionHost;
 import appeng.api.networking.security.ISecurityGrid;
 import appeng.api.parts.IPartHost;
-import appeng.api.storage.ITerminalHost;
 import appeng.api.util.AEPartLocation;
 import appeng.api.util.DimensionalCoord;
 import appeng.core.sync.GuiHostType;
@@ -70,7 +69,7 @@ public enum CrazyAEGuiBridge {
 	//PERFECT_INSCRIBER(TilePerfectInscriber.class, ContainerPerfectInscriber.class, GuiHostType.WORLD, null),
 
 	GUI_MANA_TERMINAL(ITerminalHost.class, ContainerManaTerminal.class, GuiHostType.WORLD, SecurityPermissions.BUILD),
-	GUI_ENERGY_TERMINAL(ITerminalHost.class, ContainerEnergyTerminal.class, GuiHostType.WORLD, SecurityPermissions.BUILD),
+	
 	GUI_DRIVE_PART(PartDrive.class, ContainerPartDrive.class, GuiHostType.WORLD, SecurityPermissions.BUILD),
 
 
