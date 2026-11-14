@@ -489,14 +489,6 @@ public class Blocks {
 	public ITileDefinition trashcanFluid() {
 		return this.trashcanFluid;
 	}
-
-	public ITileDefinition trashcanEnergy() {
-		return this.trashcanEnergy;
-	}
-
-
-
-
 	public ITileDefinition mechanicalPetal() {
 		return this.petalMechanical;
 	}
