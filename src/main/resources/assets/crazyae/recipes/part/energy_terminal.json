@@ -1,34 +1,12 @@
 {
   "conditions": [
     {
-      "type": "forge:or",
-      "values": [
-        {
-          "type": "crazyae:part_exists",
-          "name": "energy_terminal"
-        },
-        {
-          "type": "crazyae:material_exists",
-          "name": "mana_part_1k"
-        },
-        {
-          "type": "crazyae:material_exists",
-          "name": "mana_part_256k"
-        },
-        {
-          "type": "crazyae:material_exists",
-          "name": "mana_part_16mb"
-        }
-      ]
+      "type": "crazyae:part_exists",
+      "name": "energy_terminal"
     },
     {
-      "type": "forge:and",
-      "values": [
-        {
-          "type": "minecraft:item_exists",
-          "item": "botania:manaresource"
-        }
-      ]
+      "type": "minecraft:item_exists",
+      "item": "botania:manaresource"
     }
   ],
   "result": {
