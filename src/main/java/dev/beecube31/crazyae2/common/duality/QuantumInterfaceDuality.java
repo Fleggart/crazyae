@@ -34,7 +34,7 @@ import appeng.util.Platform;
 import appeng.util.inv.BlockingInventoryAdaptor;
 import appeng.util.inv.InvOperation;
 import appeng.util.item.AEItemStack;
-import de.ellpeck.actuallyadditions.api.tile.IPhantomTile;
+
 import dev.beecube31.crazyae2.common.interfaces.craftsystem.ICrazyCraftCallback;
 import dev.beecube31.crazyae2.common.interfaces.craftsystem.ICrazyCraftHost;
 import dev.beecube31.crazyae2.common.interfaces.craftsystem.ICrazyCraftingProviderHelper;
