@@ -19,7 +19,6 @@ import com.llamalad7.mixinextras.sugar.ref.LocalRef;
 import dev.beecube31.crazyae2.common.interfaces.ICrazyCraftingTile;
 import dev.beecube31.crazyae2.common.interfaces.crafting.ICrazyAECraftingPatternDetails;
 import dev.beecube31.crazyae2.common.interfaces.mixin.crafting.IMixinCraftingCPUStatus;
-import dev.beecube31.crazyae2.common.tile.networking.TileCraftingUnitsCombiner;
 import net.minecraft.inventory.Container;
 import net.minecraft.inventory.InventoryCrafting;
 import net.minecraft.item.ItemStack;
