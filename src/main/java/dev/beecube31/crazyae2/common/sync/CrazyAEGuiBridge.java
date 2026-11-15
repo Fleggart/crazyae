@@ -30,7 +30,7 @@ import dev.beecube31.crazyae2.common.tile.crafting.TileQuantumCPU;
 
 
 
-import dev.beecube31.crazyae2.common.tile.networking.TileCraftingUnitsCombiner;
+
 import dev.beecube31.crazyae2.common.tile.networking.TileImprovedIOPort;
 import dev.beecube31.crazyae2.common.tile.storage.TileImprovedDrive;
 import appeng.api.storage.ITerminalHost;
@@ -58,7 +58,7 @@ public enum CrazyAEGuiBridge {
 	QUANTUM_CPU_HOST(TileQuantumCPU.class, ContainerQuantumCPU.class, GuiHostType.WORLD, null),
 	IMPROVED_DRIVE(TileImprovedDrive.class, ContainerDriveImproved.class, GuiHostType.WORLD, SecurityPermissions.BUILD),
 	IMPROVED_IO_PORT(TileImprovedIOPort.class, ContainerIOPortImproved.class, GuiHostType.WORLD, SecurityPermissions.BUILD),
-	CRAFTING_UNITS_COMBINER(TileCraftingUnitsCombiner.class, ContainerCraftingUnitsCombiner.class, GuiHostType.WORLD, SecurityPermissions.BUILD),
+	
 	
 	IMPROVED_BUS(IUpgradesInfoProvider.class, ContainerCrazyAEUpgradeable.class, GuiHostType.WORLD, SecurityPermissions.BUILD),
 	ENERGY_BUS(IUpgradesInfoProvider.class, ContainerEnergyBus.class, GuiHostType.WORLD, SecurityPermissions.BUILD),
