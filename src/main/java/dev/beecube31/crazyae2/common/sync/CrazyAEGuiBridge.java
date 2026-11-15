@@ -27,7 +27,8 @@ import dev.beecube31.crazyae2.common.parts.implementations.fluid.CrazyAEPartShar
 import dev.beecube31.crazyae2.common.tile.botania.*;
 import dev.beecube31.crazyae2.common.tile.crafting.TileImprovedMAC;
 import dev.beecube31.crazyae2.common.tile.crafting.TileQuantumCPU;
-import dev.beecube31.crazyae2.common.tile.misc.TileImprovedCondenser;
+
+
 import dev.beecube31.crazyae2.common.tile.networking.TileBigCrystalCharger;
 import dev.beecube31.crazyae2.common.tile.networking.TileCraftingUnitsCombiner;
 import dev.beecube31.crazyae2.common.tile.networking.TileImprovedIOPort;
@@ -62,7 +63,7 @@ public enum CrazyAEGuiBridge {
 	IMPROVED_BUS(IUpgradesInfoProvider.class, ContainerCrazyAEUpgradeable.class, GuiHostType.WORLD, SecurityPermissions.BUILD),
 	ENERGY_BUS(IUpgradesInfoProvider.class, ContainerEnergyBus.class, GuiHostType.WORLD, SecurityPermissions.BUILD),
 	IMPROVED_FLUID_BUSES(CrazyAEPartSharedFluidBus.class, ContainerImprovedFluidBuses.class, GuiHostType.WORLD, SecurityPermissions.BUILD),
-	IMPROVED_CONDENSER(TileImprovedCondenser.class, ContainerImprovedCondenser.class, GuiHostType.WORLD, SecurityPermissions.BUILD),
+	
 	PATTERN_INTERFACE(IInterfaceHost.class, ContainerPatternsInterface.class, GuiHostType.WORLD, SecurityPermissions.BUILD),
 	QUANTUM_INTERFACE(IInterfaceHost.class, ContainerQuantumInterface.class, GuiHostType.WORLD, SecurityPermissions.BUILD),
 	PERFECT_INTERFACE(IInterfaceHost.class, ContainerPerfectInterface.class, GuiHostType.WORLD, SecurityPermissions.BUILD),
