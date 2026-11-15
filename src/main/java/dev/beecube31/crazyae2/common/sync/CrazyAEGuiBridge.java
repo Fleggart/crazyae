@@ -29,7 +29,7 @@ import dev.beecube31.crazyae2.common.tile.crafting.TileImprovedMAC;
 import dev.beecube31.crazyae2.common.tile.crafting.TileQuantumCPU;
 
 
-import dev.beecube31.crazyae2.common.tile.networking.TileBigCrystalCharger;
+
 import dev.beecube31.crazyae2.common.tile.networking.TileCraftingUnitsCombiner;
 import dev.beecube31.crazyae2.common.tile.networking.TileImprovedIOPort;
 import dev.beecube31.crazyae2.common.tile.storage.TileImprovedDrive;
@@ -59,7 +59,7 @@ public enum CrazyAEGuiBridge {
 	IMPROVED_DRIVE(TileImprovedDrive.class, ContainerDriveImproved.class, GuiHostType.WORLD, SecurityPermissions.BUILD),
 	IMPROVED_IO_PORT(TileImprovedIOPort.class, ContainerIOPortImproved.class, GuiHostType.WORLD, SecurityPermissions.BUILD),
 	CRAFTING_UNITS_COMBINER(TileCraftingUnitsCombiner.class, ContainerCraftingUnitsCombiner.class, GuiHostType.WORLD, SecurityPermissions.BUILD),
-	BIG_CRYSTAL_CHARGER(TileBigCrystalCharger.class, ContainerBigCrystalCharger.class, GuiHostType.WORLD, SecurityPermissions.BUILD),
+	
 	IMPROVED_BUS(IUpgradesInfoProvider.class, ContainerCrazyAEUpgradeable.class, GuiHostType.WORLD, SecurityPermissions.BUILD),
 	ENERGY_BUS(IUpgradesInfoProvider.class, ContainerEnergyBus.class, GuiHostType.WORLD, SecurityPermissions.BUILD),
 	IMPROVED_FLUID_BUSES(CrazyAEPartSharedFluidBus.class, ContainerImprovedFluidBuses.class, GuiHostType.WORLD, SecurityPermissions.BUILD),
