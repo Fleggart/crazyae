@@ -60,7 +60,7 @@ public class Blocks {
 	private final ITileDefinition impDrive;
 	private final ITileDefinition iOPortImp;
 	private final ITileDefinition craftingUnitsCombiner;
-	private final ITileDefinition bigCrystalCharger;
+	
 	
 	private final IBlockDefinition fluixilizedBlock;
 	private final ITileDefinition patternsInterface;
@@ -283,9 +283,7 @@ public class Blocks {
 				.tileEntity(new TileEntityDefinition(TileCraftingUnitsCombiner.class))
 				.build();
 
-		this.bigCrystalCharger = registry.block("big_crystal_charger", BlockBigCrystalCharger::new)
-				.tileEntity(new TileEntityDefinition(TileBigCrystalCharger.class))
-				.build();
+		
 
 		this.patternsInterface = registry.block("patterns_interface", BlockInterfacePatterns::new)
 				.features(Features.PATTERNS_INTERFACE)
@@ -495,9 +493,7 @@ public class Blocks {
 		return this.iOPortImp;
 	}
 	
-	public ITileDefinition bigCrystalCharger() {
-		return this.bigCrystalCharger;
-	}
+	
 
 	public ITileDefinition quantumChannelMultiplier() {
 		return this.quantumChannelMultiplier;
