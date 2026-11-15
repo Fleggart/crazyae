@@ -853,16 +853,8 @@ public class QuantumInterfaceDuality extends DualityInterface implements ICrazyI
     }
 
     private boolean checkBlocking(World w, BlockPos targetPos, TileEntity te, InventoryAdaptor ad, EnumFacing s) {
-        IPhantomTile phantomTE;
-        if (ModsChecker.AA_LOADED && te instanceof IPhantomTile) {
-            phantomTE = ((IPhantomTile) te);
-            if (phantomTE.hasBoundPosition()) {
-                TileEntity phantom = w.getTileEntity(phantomTE.getBoundPosition());
-                if (NonBlockingItems.INSTANCE.getMap().containsKey(w.getBlockState(phantomTE.getBoundPosition()).getBlock().getRegistryName().getNamespace())) {
-                    return isCustomInvBlocking(phantom, s);
-                }
-            }
-        } else if (NonBlockingItems.INSTANCE.getMap().containsKey(w.getBlockState(targetPos).getBlock().getRegistryName().getNamespace())) {
+        
+        if (NonBlockingItems.INSTANCE.getMap().containsKey(w.getBlockState(targetPos).getBlock().getRegistryName().getNamespace())) {
             return isCustomInvBlocking(te, s);
         }
         return invIsBlocked(ad);
