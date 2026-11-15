@@ -12,7 +12,7 @@ import dev.beecube31.crazyae2.common.blocks.crafting.BlockDenseCraftingUnit;
 import dev.beecube31.crazyae2.common.blocks.crafting.BlockImprovedMAC;
 import dev.beecube31.crazyae2.common.blocks.crafting.BlockQuantumCPU;
 import dev.beecube31.crazyae2.common.blocks.materials.BlockFluxilized;
-import dev.beecube31.crazyae2.common.blocks.misc.BlockImprovedCondenser;
+
 import dev.beecube31.crazyae2.common.blocks.networking.*;
 import dev.beecube31.crazyae2.common.blocks.storage.BlockDriveImproved;
 import dev.beecube31.crazyae2.common.features.Features;
@@ -24,7 +24,7 @@ import dev.beecube31.crazyae2.common.tile.botania.*;
 import dev.beecube31.crazyae2.common.tile.crafting.TileDenseCraftingUnit;
 import dev.beecube31.crazyae2.common.tile.crafting.TileImprovedMAC;
 import dev.beecube31.crazyae2.common.tile.crafting.TileQuantumCPU;
-import dev.beecube31.crazyae2.common.tile.misc.TileImprovedCondenser;
+
 import dev.beecube31.crazyae2.common.tile.networking.*;
 import dev.beecube31.crazyae2.common.tile.storage.TileImprovedDrive;
 import net.minecraft.util.ResourceLocation;
@@ -61,7 +61,7 @@ public class Blocks {
 	private final ITileDefinition iOPortImp;
 	private final ITileDefinition craftingUnitsCombiner;
 	private final ITileDefinition bigCrystalCharger;
-	private final ITileDefinition improvedCondenser;
+	
 	private final IBlockDefinition fluixilizedBlock;
 	private final ITileDefinition patternsInterface;
 	private final ITileDefinition perfectInterface;
@@ -350,11 +350,6 @@ public class Blocks {
 				.tileEntity(new TileEntityDefinition(TileMechanicalBrewery.class))
 				.build();
 
-		this.improvedCondenser = registry.block("improved_condenser", BlockImprovedCondenser::new)
-				.features(Features.STUB)
-				.tileEntity(new TileEntityDefinition(TileImprovedCondenser.class))
-				.build();
-
 		this.fluixilizedBlock = registry.block("fluixilized_block", BlockFluxilized::new)
 				.aeFeatures(AEFeature.FLUIX)
 				.build();
@@ -502,10 +497,6 @@ public class Blocks {
 	
 	public ITileDefinition bigCrystalCharger() {
 		return this.bigCrystalCharger;
-	}
-
-	public ITileDefinition improvedCondenser() {
-		return this.improvedCondenser;
 	}
 
 	public ITileDefinition quantumChannelMultiplier() {
