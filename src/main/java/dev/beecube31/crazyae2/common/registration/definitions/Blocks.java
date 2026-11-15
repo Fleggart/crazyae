@@ -59,7 +59,7 @@ public class Blocks {
 	private final ITileDefinition quantumCPU;
 	private final ITileDefinition impDrive;
 	private final ITileDefinition iOPortImp;
-	private final ITileDefinition craftingUnitsCombiner;
+	
 	
 	
 	private final IBlockDefinition fluixilizedBlock;
@@ -279,9 +279,7 @@ public class Blocks {
 				.tileEntity(new TileEntityDefinition(TileImprovedIOPort.class))
 				.build();
 
-		this.craftingUnitsCombiner = registry.block("crafting_units_combiner", BlockCraftingUnitsCombiner::new)
-				.tileEntity(new TileEntityDefinition(TileCraftingUnitsCombiner.class))
-				.build();
+	
 
 		
 
@@ -503,9 +501,7 @@ public class Blocks {
 		return this.quantumChannelMultiplierCreative;
 	}
 
-	public ITileDefinition craftingUnitsCombiner() {
-		return this.craftingUnitsCombiner;
-	}
+	
 
 	public ITileDefinition patternsInterface() {
 		return this.patternsInterface;
