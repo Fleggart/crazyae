@@ -200,11 +200,6 @@ public abstract class MixinCraftingCPUCluster implements IMixinCraftingCPUStatus
             this.availableStorage += Math.min(r.getStorageCnt(), Long.MAX_VALUE - this.availableStorage);
         }
 
-        if (te instanceof TileCraftingUnitsCombiner combiner) {
-            this.accelerator += Math.min(combiner.getAcceleratorAmt(), Integer.MAX_VALUE - this.accelerator);
-            this.availableStorage += Math.min(combiner.getStorageAmt(), Long.MAX_VALUE - this.availableStorage);
-        }
-
         this.crazyae$overflowProtection();
     }
 
