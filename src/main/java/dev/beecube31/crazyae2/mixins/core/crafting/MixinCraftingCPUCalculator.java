@@ -5,7 +5,6 @@ import appeng.me.cluster.IAEMultiBlock;
 import appeng.me.cluster.implementations.CraftingCPUCalculator;
 import appeng.tile.crafting.TileCraftingTile;
 import dev.beecube31.crazyae2.common.interfaces.ICrazyCraftingTile;
-import dev.beecube31.crazyae2.common.tile.networking.TileCraftingUnitsCombiner;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import org.spongepowered.asm.mixin.Mixin;
@@ -39,10 +38,6 @@ public class MixinCraftingCPUCalculator {
 
                     if (!storage && te instanceof TileCraftingTile) {
                         storage = ((TileCraftingTile) te).getStorageBytes() > 0;
-                    }
-
-                    if (!storage && te instanceof TileCraftingUnitsCombiner combiner) {
-                        storage = combiner.getStorageAmt() > 0;
                     }
                 }
             }
