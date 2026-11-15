@@ -5,7 +5,6 @@ import appeng.api.storage.data.IAEItemStack;
 import appeng.container.implementations.CraftingCPUStatus;
 import dev.beecube31.crazyae2.common.interfaces.craftsystem.ICrazyCraftHost;
 import dev.beecube31.crazyae2.common.interfaces.mixin.crafting.IMixinCraftingCPUStatus;
-import dev.beecube31.crazyae2.common.tile.networking.TileCraftingUnitsCombiner;
 import net.minecraft.nbt.NBTTagCompound;
 import org.spongepowered.asm.mixin.*;
 import org.spongepowered.asm.mixin.injection.At;
@@ -65,9 +64,6 @@ public abstract class MixinCraftingCPUStatus implements IMixinCraftingCPUStatus 
         if (cluster instanceof ICrazyCraftHost r) {
             this.storage = r.getAvailableStorage();
             this.crazyae$accelerators = r.getAcceleratorCount();
-        } else if (cluster instanceof TileCraftingUnitsCombiner r) {
-            this.storage = r.getStorageAmt();
-            this.crazyae$accelerators = r.getAcceleratorAmt();
         } else {
             this.storage = cluster.getAvailableStorage();
             this.crazyae$accelerators = cluster.getCoProcessors();
