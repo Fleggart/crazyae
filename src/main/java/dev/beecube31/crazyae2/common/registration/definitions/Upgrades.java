@@ -57,7 +57,7 @@ public class Upgrades implements DamagedDefinitions<DamagedItemDefinition, Upgra
 				UpgradeType.STACKS.registerItem(CrazyAE.definitions().parts().improvedImportFluidBus(), new FeatureSet().add("stacks:4").add(CrazyAETooltip.MORE_FLUID_PER_TICK.getUnlocalized()).add("8000;40000;136000;392000;1032000"));
 				UpgradeType.STACKS.registerItem(CrazyAE.definitions().parts().improvedExportFluidBus(), new FeatureSet().add("stacks:4").add(CrazyAETooltip.MORE_FLUID_PER_TICK.getUnlocalized()).add("8000;40000;136000;392000;1032000"));
 				UpgradeType.STACKS.registerItem(CrazyAE.definitions().blocks().improvedMolecularAssembler(), new FeatureSet().add("stacks:5").add(CrazyAETooltip.MORE_OPERATIONS_PER_TICK.getUnlocalized()).add("8;16;32;64;128;160"));
-				UpgradeType.STACKS.registerItem(CrazyAE.definitions().blocks().bigCrystalCharger(), new FeatureSet().add("stacks:5").add(CrazyAETooltip.MORE_OPERATIONS_PER_JOB).add("1;64;192;384;768;1152"));
+				
 				UpgradeType.STACKS.registerItem(CrazyAE.definitions().parts().manaImportBus(), new FeatureSet().add("stacks:4").add(CrazyAETooltip.MORE_ITEMS_PER_TICK.getUnlocalized()).add("256;16384;131328;524544;2097408"));
 				UpgradeType.STACKS.registerItem(CrazyAE.definitions().parts().manaExportBus(), new FeatureSet().add("stacks:4").add(CrazyAETooltip.MORE_ITEMS_PER_TICK.getUnlocalized()).add("256;16384;131328;524544;2097408"));
 
@@ -82,7 +82,7 @@ public class Upgrades implements DamagedDefinitions<DamagedItemDefinition, Upgra
 		this.improvedSpeedUpgrade = this.createUpgrade(this.upgrade, UpgradeType.IMPROVED_SPEED);
 		if (this.improvedSpeedUpgrade.isEnabled()) {
 			registry.addBootstrapComponent((IPostInitComponent) r -> {
-				UpgradeType.IMPROVED_SPEED.registerItem(CrazyAE.definitions().blocks().bigCrystalCharger(), new FeatureSet().add("imp:5").add(CrazyAETooltip.MORE_OPERATIONS_PER_TICK.getUnlocalized()).add("1;10;15;25;40;60"));
+				
 
 				UpgradeType.IMPROVED_SPEED.registerItem(CrazyAE.definitions().blocks().mechanicalElventrade(), new FeatureSet().add("imp:4").add(CrazyAETooltip.MORE_OPERATIONS_PER_TICK.getUnlocalized()).add("1;2;5;10;15;20"));
 				UpgradeType.IMPROVED_SPEED.registerItem(CrazyAE.definitions().blocks().mechanicalManapool(), new FeatureSet().add("imp:4").add(CrazyAETooltip.MORE_OPERATIONS_PER_TICK.getUnlocalized()).add("1;2;5;10;15;20"));
@@ -98,7 +98,7 @@ public class Upgrades implements DamagedDefinitions<DamagedItemDefinition, Upgra
 		this.advancedSpeedUpgrade = this.createUpgrade(this.upgrade, UpgradeType.ADVANCED_SPEED);
 		if (this.advancedSpeedUpgrade.isEnabled()) {
 			registry.addBootstrapComponent((IPostInitComponent) r -> {
-				UpgradeType.ADVANCED_SPEED.registerItem(CrazyAE.definitions().blocks().bigCrystalCharger(), new FeatureSet().add("adv:1").add(CrazyAETooltip.MORE_OPERATIONS_PER_TICK.getUnlocalized()).add("1;100"));
+				
 
 				UpgradeType.ADVANCED_SPEED.registerItem(CrazyAE.definitions().blocks().mechanicalElventrade(), new FeatureSet().add("adv:1").add(CrazyAETooltip.MORE_OPERATIONS_PER_TICK.getUnlocalized()).add("1;100"));
 				UpgradeType.ADVANCED_SPEED.registerItem(CrazyAE.definitions().blocks().mechanicalManapool(), new FeatureSet().add("adv:1").add(CrazyAETooltip.MORE_OPERATIONS_PER_TICK.getUnlocalized()).add("1;100"));
